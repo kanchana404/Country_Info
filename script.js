@@ -25,6 +25,7 @@ fetch("https://restcountries.com/v3.1/all")
 
 function countryCheck(){
     const InputCountry = document.getElementById("countryName").value.toLowerCase();
+    
     if(countryList.includes(InputCountry)){
         alert("Country Found");
     }else{
