@@ -27,6 +27,9 @@ const Currency = document.getElementById("Currency");
 const Region = document.getElementById("Region");
 const Languages = document.getElementById("Languages");
 
+const flag = document.getElementById("flag");
+const Location = document.getElementById("Location");
+
 
 
 function countryCheck(){
@@ -46,11 +49,14 @@ function countryCheck(){
             const country = data.find((element) => element.name.common === countryName);
     
             if (country) {
+                console.log(country);
                 CName.textContent = country.name.common;
                 CCity.textContent = country.capital;
                 Currency.textContent = country.currencies[Object.keys(country.currencies)[0]].name;
                 Region.textContent = country.region;
                 Languages.textContent = Object.values(country.languages).join(", ");
+                flag.src = country.flags.png;
+                Location.href = country.maps.googleMaps;
             }
         })
         .catch((error) => {
