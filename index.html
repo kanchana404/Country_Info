@@ -15,10 +15,20 @@
         <div class="col-8 text-center">
             <h1 style="font-size: 60px;"><b><i>Country Information</i></b></h1>
             <br>
-            <span class="d-flex" role="search">
+            
                 <input class="form-control me-2" type="search" placeholder="Country name" id="countryName" aria-label="Search">
-                <button class="btn btn-dark" onclick="countryCheck()">Search</button>
-              </span>
+            
+                <div class="col-12"><h1><b><i>OR</i></b></h1></div>
+                <select name="country" class="form-control" id="country">
+                    <option >Select A country</option>
+                </select>
+                <br>
+             <div class="container">
+                <div class="col-12">
+                    <button onclick="countryCheck22()" class="btn btn-dark">Check</button>
+                </div>
+                
+             </div> 
         </div>
         <div class="col-2"></div>
     </div>
@@ -48,7 +58,7 @@
                     <br>
                     <br>
                     <div class="col-12 text-center">
-                        <a id="Location" href="https://goo.gl/maps/FoDtc3UKMkFsXAjHA" style="text-decoration: none;"><b>Location</b></a>
+                        <a id="Location" href="" style="text-decoration: none;"><b>Location</b></a>
                     </div>
                    
                 </div>
