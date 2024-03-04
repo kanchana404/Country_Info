@@ -68,13 +68,13 @@ const UserCountry = document.getElementById("countryName");
 const countrySelect1 = document.getElementById("country");
 const flag = document.getElementById("flag");
 const Location = document.getElementById("Location");
+const time = document.getElementById("time");
 
 
 
 
 function countryCheck22(){
-    console.log(UserCountry.value.length);
-   console.log(countrySelect1.value.length);
+    
 
    if(UserCountry.value.length >= 0 &&  countrySelect1.value == "Select A country" ){
     if(countryList.includes(UserCountry.value.toLowerCase())){
@@ -100,6 +100,7 @@ function countryCheck22(){
                 Languages.textContent = Object.values(country.languages).join(", ");
                 flag.src = country.flags.png;
                 Location.href = country.maps.googleMaps;
+              
 
 
 
